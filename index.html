@@ -4,27 +4,19 @@
   <meta charset="UTF-8">
   <title>ScriptAI</title>
  <body>
-   <header>
-     <style>
-    .triangle {
-      width: 120px;
-      height: 100px;
-      background: white;
-      -webkit-text-stroke: 3px black;
-      clip-path: polygon(50% 0%, 0% 60%, 60% 60%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 34px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="triangle">
+   
+   /*شعار المنصة*/
+   /*Imagine . Write . Produce*/
+   <header1>
+     <h1>IMAGINE</h1>
+     <h1>WRITE</h1>
+     <h1>PRODUCE</h1>
+   </header1>
+
+   /*العنوان الرئيسي بالأشكال المثلثية*/
+   /* S C R I P T A I */
+   <header2>
     <h1>S</h1>
-  </div>
      <h1>C</h1>
      <h1>R</h1>
      <h1>I</h1>
@@ -32,6 +24,151 @@
      <h1>T</h1>
      <h2>A</h2>
      <h2>I</h2>
-   </header>
+   </header2>
+   
+   /* الجدول العلوي للمنصة / القوائم */
+   /* Features  Dashboard  Pricing  Account */
+   <nav3>
+     <a href="page.html">Features</a>
+     <a href="page.html">Dashboard</a>
+     <a href="page.html">Pricing</a>
+     <a href="page.html">Account</a>
+   </nav3>
+
+   /* Sidebar | القائمة الجانبية */
+   /* Home
+      Dashboard
+      Upgrade
+      About * /
+   <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar قابل للفتح والإغلاق</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* زر التحكم */
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    /* شريط جانبي مخفي */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px; /* مخفي خارج الشاشة */
+      width: 250px;
+      height: 100vh;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: left 0.3s;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+    }
+
+    /* عند الضغط على input (checkbox hack) */
+    #sidebar-toggle:checked ~ .sidebar {
+      left: 0; /* يظهر الشريط */
+    }
+
+    /* محتوى الصفحة */
+    .main {
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    #sidebar-toggle:checked ~ .main {
+      margin-left: 250px; /* يبتعد المحتوى عند فتح الشريط */
+    }
+
+    /* إخفاء checkbox */
+    #sidebar-toggle {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- checkbox للتحكم -->
+  <input type="checkbox" id="sidebar-toggle">
+
+  <!-- زر فتح/إغلاق -->
+  <label for="sidebar-toggle" class="toggle-btn">☰</label>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>القائمة</h2>
+    <a href="#">Home</a>
+    <a href="#">Dashbooard</a>
+    <a href="#">Upgrade</a>
+    <a href="#">اAbout</a>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main">
+    <a href="page.html">Home.html</a>
+    <p>.</p>
+  </div>
+
 </body>
 </html>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
