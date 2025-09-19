@@ -54,4 +54,31 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Main Page</title>
+</head>
+<body>
+
+  <!-- مكان إدراج الـ Navbar -->
+  <div id="navbar"></div>
+
+  <div>
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content.</p>
+  </div>
+
+  <script>
+    // تحميل Navbar.html وإضافته هنا
+    fetch("Navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
 
