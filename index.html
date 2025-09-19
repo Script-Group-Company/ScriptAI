@@ -1,16 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ScriptAI</title>
-  <link id="theme-style" rel="stylesheet" href="light.css">
+  <title>Staggered Menu Example</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1a1a1a;
+      font-family: sans-serif;
+      color: #fff;
+      direction: rtl; /* لأنك تكتب بالعربية */
+    }
+
+    /* زر القائمة */
+    .menu-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    /* القائمة */
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background: linear-gradient(180deg, #B19EEF, #5227FF);
+      transition: right 0.3s ease;
+      padding: 60px 20px;
+      box-shadow: -4px 0 10px rgba(0,0,0,0.4);
+    }
+    .menu.open {
+      right: 0;
+    }
+
+    .menu h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 10px;
+    }
+
+    .menu a {
+      display: block;
+      margin: 10px 0;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .menu a:hover {
+      color: #ff6b6b; /* accent */
+    }
+
+    .socials {
+      margin-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.4);
+      padding-top: 15px;
+    }
+
+    .socials a {
+      margin-right: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .socials a:hover {
+      color: #ff6b6b;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>S</h1><h1>C</h1><h1>R</h1><h1>I</h1><h1>P</h1><h1>T</h1><h1>A</h1><h1>I</h1>
-  </header>
 
-  </body>
+  <button class="menu-btn" id="menuBtn">☰</button>
+
+  <nav class="menu" id="menu">
+    <h2>القائمة</h2>
+    <a href="/">01. Home</a>
+    <a href="/about">02. About</a>
+    <a href="/services">03. Services</a>
+    <a href="/contact">04. Contact</a>
+
+    <div class="socials">
+      <h2>التواصل</h2>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      if(menu.classList.contains('open')){
+        console.log('Menu opened');
+      } else {
+        console.log('Menu closed');
+      }
+    });
+  </script>
+
+</body>
 </html>
-
