@@ -3,25 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ScriptAI</title>
-  <style>
+<title>الصفحة الأساسية</title>
+<style>
   body {
-  background: #0D0D0D;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-    .script-text {
-  font-size: 7rem;       /* حجم الخط */
-  letter-spacing: 1.5rem; /* المسافة بين الحروف */
-  font-weight: bold;     /* خط عريض */
-  color: #ffffff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* العناصر تحت بعض */
+    justify-content: center; /* توسيط عمودي */
+    align-items: center;     /* توسيط أفقي */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* خلفية تدرج */
+    color: #fff;
+    text-align: center;
   }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
   }
 </style>
 </head>
 <body>
 
-<div class="script-text">SCRIPT</div>
+  <h1>مرحباً بك في صفحتي</h1>
+  <p>هذا نص تجريبي يمكن تغييره لاحقاً.</p>
+  <button>إضغط هنا</button>
 
 </body>
 </html>
