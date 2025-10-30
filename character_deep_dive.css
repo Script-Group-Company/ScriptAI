@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden;
+    position: center;
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 150px;
+    cursor: grab;
+    transition: transform 0.9s ease, opacity 1s ease;
+    position:fixed;
+    margin-left: 405px;
+}
+h1:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+h2 {
+    position: fixed;
+    margin-left: 990px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 240px;
+    cursor: grab;
+    font-weight: 100;
+    letter-spacing: 2px;
+    width: 70px;
+  height: 30px;
+  border: 2px solid rgb(255, 255, 255);      /* حجم الحدود */
+  display: flex;                /* لتوسيط النص */
+  justify-content: center;      /* أفقياً */
+  align-items: center;          /* عمودياً */
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s, border 0.3s, transform 0.6s;
+}
+h2:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: 3px solid rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+}
+
+
+body1 {
+    background-color: black;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    overflow-x: hidden;
+    position: fixed;
+    margin-left: 370px;
+    margin-top: 200px;
+    z-index: -1;
+    bottom: 50px;
+    width: 100%;
+}
+.chat-box{
+     font-family: "Quicksand", sans-serif;
+  width:800px;
+  height:400px;
+  background:#000000;
+  border-radius:16px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.messages{
+     font-family: "Quicksand", sans-serif;
+  flex:1;
+  padding:14px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.msg{
+     font-family: "Quicksand", sans-serif;
+  padding:10px 14px;
+  border-radius:12px;
+  max-width:80%;
+  font-size:14px;
+  line-height:1.4;
+  word-break:break-word;
+}
+.user{
+    font-family: "Quicksand", sans-serif;
+  background:#000000;
+  align-self:flex-end;
+}
+.ai{
+     font-family: "Quicksand", sans-serif;
+  background:#000000;
+  align-self:flex-start;
+}
+.input-area{
+     font-family: "Quicksand", sans-serif;
+     font-weight: 400;
+  display:flex;
+  gap:8px;
+  padding:10px;
+  border-top:1px solid #000000;
+}
+textarea{
+     font-family: "Quicksand", sans-serif;
+  flex:1;
+  color:white;
+  resize:none;
+  background-color: #000000;
+  border:none;
+  border-radius:10px;
+  padding:8px 10px;
+  font-size:14px;
+  font-weight: 600;
+  outline: solid rgb(255, 255, 255) 3px;
+  height:40px;
+}
+button{
+     font-family: "Quicksand", sans-serif;
+  background:#ffffff;
+  border:none;
+  border-color: white;
+  border-radius:10px;
+  padding:0 16px;
+  cursor:pointer;
+  font-weight: 300;
+  transition: transform 0.5s;
+
+}
+button:hover{
+    transform: scale(1.05);}
+button .icon{
+  width:20px;
+  height:20px;
+  color:white;
+}
+button:disabled{opacity:.6;cursor:not-allowed}
+
+footer {
+    background:none;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: left;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+input::placeholder,
+textarea::placeholder {
+  color: white;   /* غيّر اللون كما تريد */
+  opacity: 0.7;       /* لجعل اللون واضح تماماً */
+}
+
+body3 {
+    background-color:none;
+    overflow:hidden;
+    position: fixed;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right:10px;
+    
+}

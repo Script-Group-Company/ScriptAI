@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UFT-8">
+        <title>
+            Pricing Page
+        </title>
+        <link rel="stylesheet" href="pricing.css">
+        <script src="pricing.js"></script>
+    </head>
+</html>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">   
+<!-- Title -->
+<h1 class="main-title">ScriptAI</h1>
+
+<!-- Payment Section -->
+<div class="payment-container">
+  <h2>Payment Checkout</h2>
+
+  <form class="payment-form">
+    <label>Payment Method</label>
+    <select id="payment-method" required>
+      <option value="card">Credit / Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="applepay">Apple Pay</option>
+    </select>
+
+    <div id="card-fields">
+      <label>Cardholder Name</label>
+      <input type="text" placeholder="John Doe" required>
+
+      <label>Card Number</label>
+      <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+      <div class="row">
+        <div>
+          <label>Expiry Date</label>
+          <input type="text" placeholder="MM/YY" required>
+        </div>
+        <div>
+          <label>CVV</label>
+          <input type="text" maxlength="3" placeholder="123" required>
+        </div>
+      </div>
+    </div>
+
+    <label>Amount</label>
+    <input type="number" placeholder="100.00" required>
+
+    <button type="submit">Pay Now</button>
+  </form>
+</div>
+
+<footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <p> ©️ Script Group Company - ScriptAI 2025 </p>
+</footer>

@@ -1,0 +1,59 @@
+body {
+   background: linear-gradient(-45deg, #414343, #010101, #181818, #414343);
+  background-size: 400% 400%;
+    color:white;
+    font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+animation: gradientMove 10s ease infinite;
+}
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+body0 {
+  position:fixed;
+}
+h1 {
+    margin:0;
+    padding: 10px 20px;
+    font-size:100px;
+    cursor:grab;
+    display:flex;
+     transition: transform 0.5s ease, opacity 1s ease;
+}
+h1:hover {
+    transform:scale(1.2);
+    color:aquamarine;
+    transform-origin: center;
+  }
+.slide-out {
+  transform: translateX(100%);
+  opacity: 0;
+}
+body1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 160px;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  position:fixed;
+  }
+  footer {
+    margin-top:800px;
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تبديل اللغة</title>
+<style>
+  body { font-family: Arial, sans-serif; direction: rtl; }
+  .lang-btn { margin: 5px; padding: 5px 10px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<h1 id="title">مرحباً بك في منصتنا</h1>
+<p id="description">هذه وصف للمنصة بالعربية.</p>
+
+<button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
+<button class="lang-btn" onclick="setLanguage('en')">English</button>
+
+<script>
+  const texts = {
+    ar: {
+      title: "مرحباً بك في منصتنا",
+      description: "هذه وصف للمنصة بالعربية."
+    },
+    en: {
+      title: "Welcome to our platform",
+      description: "This is the platform description in English."
+    }
+  };
+
+  function setLanguage(lang) {
+    document.getElementById('title').innerText = texts[lang].title;
+    document.getElementById('description').innerText = texts[lang].description;
+
+    // تغيير اتجاه الصفحة حسب اللغة
+    if(lang === 'ar') {
+      document.body.dir = 'rtl';
+    } else {
+      document.body.dir = 'ltr';
+    }
+  }
+</script>
+
+</body>
+</html>
